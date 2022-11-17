@@ -24,7 +24,7 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
   
   
 
-### :information_desk_person: example총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.
+### :information_desk_person: 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.
 
 ```
 1. 공연 목록 get_performance_list(start_date="20210101", end_date=20220101")
