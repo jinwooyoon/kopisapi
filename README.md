@@ -55,12 +55,7 @@ example)
 
 :bulb:  API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 값을 입력하시면 됩니다.  
   API에 입력되는 인자값은 모두 `string type`입니다.
-
-
+  
+  
 * start_date = "년/월/일"
 * end_date = "년/월/일"
-
-
-
-
-
