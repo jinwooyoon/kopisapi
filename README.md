@@ -6,4 +6,13 @@ KOPIS(공연 예술 통합 전산망)의 데이터를
 ## How to install  
 `pip install kopisapi`  
 
+## How to use
+
+```  
+import kopisapi
+
+kopis = kopisapi("input your kopis service key")
+
+```  
+
 
