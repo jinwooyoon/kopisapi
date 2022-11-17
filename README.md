@@ -22,7 +22,7 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
 
 - 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.  
 ```  
-공연 목록 get_performance_list(start_date=str, end_date=str)
+공연 목록 <em>get_performance_list(start_date=str, end_date=str)</em>
 
 공연시설 목록 get_performance_facility_list()
 
