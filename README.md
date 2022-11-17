@@ -19,7 +19,8 @@ kopis.get_performance_list(start_date="20220101",end_date="20220102")
 ```  
 :bulb: kopisapi service key는 밑에 링크를 통하여 발급 받으실 수 있습니다.   
 https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchType=total&searchWord=  
-
+  
+  
 ### 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.
 
 :information_desk_person: example
@@ -53,8 +54,9 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
 14. 공연별 통계 get_statistics_by_performance(start_date="20210101", end_date=20220101")
 ```
 
-:heavy_exclamation_mark:  API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 값을 입력하시면 됩니다.   
-    API에 입력되는 인자값은 모두 `string type`입니다.
+:heavy_exclamation_mark:  API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 값을 입력하시면 됩니다.  
+
+ API에 입력되는 인자값은 모두 `string type`입니다.
   
   
 * start_date = "년/월/일"
