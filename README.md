@@ -21,15 +21,27 @@ kopis.get_performance_list(start_date="20220101",end_date="20220102")
 https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchType=total&searchWord=  
 
 - 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.  
-```  
-공연 목록 <em>get_performance_list(start_date=str, end_date=str)</em>
-
-공연시설 목록 get_performance_facility_list()
-
-기획/제작사 목록 get_production_company_list()
-
-축제 목록 get_festival_list(start_date=str, end_date=str)
-
+API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 사용하시면 됩니다.
 
 ```  
+example)
 
+1. 공연 목록 get_performance_list(start_date="20210101", end_date=20220101")
+
+2. 공연시설 목록 get_performance_facility_list()
+
+3. 기획/제작사 목록 get_production_company_list()
+
+4. 축제 목록 get_festival_list(start_date="20210101", end_date=20220101")
+
+5. 수상작 목록 get_award_list(start_date="20210101", end_date=20220101")
+
+6. 극작가 목록 get_playwright_list(start_date="20210101", end_date=20220101")
+
+:bulb: start_date, end_date 는 인자값으로 string type의 
+
+7. 예매 상황판 get_reservation_status_list(date_type =(), date, mode= "nationwide")
+-> 
+
+
+``` 
