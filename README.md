@@ -4,4 +4,4 @@ KOPIS(공연 예술 통합 전산망)의 데이터를
 
 
 ## How to install  
-<span style="color:red">`pip install kopisapi`</span>
+<span style="color:red">pip install kopisapi</span>
