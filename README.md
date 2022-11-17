@@ -25,12 +25,12 @@ API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 사
 
 
 example)
-
-`1. 공연 목록 get_performance_list(start_date="20210101", end_date=20220101")`  
+```
+1. 공연 목록 get_performance_list(start_date="20210101", end_date=20220101")
   
-`2. 공연시설 목록 get_performance_facility_list()`  
+2. 공연시설 목록 get_performance_facility_list()
   
-`3. 기획/제작사 목록 get_production_company_list()`  
+3. 기획/제작사 목록 get_production_company_list()
 
 4. 축제 목록 get_festival_list(start_date="20210101", end_date=20220101")
 
@@ -41,6 +41,6 @@ example)
 :bulb: start_date, end_date 는 인자값으로 string type의 
 
 7. 예매 상황판 get_reservation_status_list(date_type =(), date, mode= "nationwide")
--> 
+```
 
 
