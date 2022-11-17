@@ -12,7 +12,7 @@ KOPIS(공연 예술 통합 전산망)의 데이터를
 ```python
 import kopisapi
 
-kopis = kopisapi("input your kopis service key")
+kopis = kopisapi("INPUT YOUR KOPIS SERVICE KEY")
 
 kopis.get_performance_list(start_date="20220101",end_date="20220102")
 
