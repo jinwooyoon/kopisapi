@@ -17,7 +17,7 @@ kopis = kopisapi("input your kopis service key")
 kopis.get_performance_list(start_date="20220101",end_date="20220102")
 
 ```  
-:bulb: kopisapi service key는 밑에 링크를 통하여 발급 받으실 수 있습니다.   
+:bulb: `KOPIS SERVICE KEY` 는 밑에 링크를 통하여 발급 받으실 수 있습니다.   
 https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchType=total&searchWord=  
   
   
