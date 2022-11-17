@@ -64,7 +64,8 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
 * start_date = "년/월/일"
 * end_date = "년/월/일"
 * date = "년/월/일"
-* date_type = "month" or "week" or "day"
-* mode = "nationwide" or "region" [nationwide는 전국 공연 예매 랭킹 순위 / region은 지역별 공연 예매 랭킹 순위]
 * start_month = "년/월"
 * start_year = "년"
+* date_type = "month" or "week" or "day"
+* mode = "nationwide" or "region" [nationwide는 전국 공연 예매 랭킹 순위 / region은 지역별 공연 예매 랭킹 순위]
+
