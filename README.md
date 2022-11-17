@@ -20,9 +20,9 @@ kopis.get_performance_list(start_date="20220101",end_date="20220102")
 + kopisapi service key는 밑에 링크를 통하여 발급 받으실 수 있습니다.   
 https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchType=total&searchWord=  
 
-+ 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.  
+:arrow_heading_down: 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.
 
-:information_desk_person: `example`
+:information_desk_person: example
 ```
 1. 공연 목록 get_performance_list(start_date="20210101", end_date=20220101")
   
