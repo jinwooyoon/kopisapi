@@ -53,8 +53,8 @@ example)
 14. 공연별 통계 get_statistics_by_performance(start_date="20210101", end_date=20220101")
 ```
 
-API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 값을 입력하시면 됩니다.
-API에 입력되는 인자값은 모두 <span style="color:red">string type</span> 입니다.
+:bulb: API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 값을 입력하시면 됩니다.  
+API에 입력되는 인자값은 모두 <span style="color:red">string type </span>입니다.
 
 * start_date = "년/월/일"
 * end_date = "년/월/일"
