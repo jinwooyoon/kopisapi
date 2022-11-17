@@ -13,6 +13,8 @@ import kopisapi
 
 kopis = kopisapi("input your kopis service key")
 
+kopis.get_performance_list(start_date="20220101",end_date="20220102")
+
 ```  
 
 
