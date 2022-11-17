@@ -21,8 +21,6 @@ kopis.get_performance_list(start_date="20220101",end_date="20220102")
 https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchType=total&searchWord=  
 
 + 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.  
-API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 사용하시면 됩니다.
-
 
 example)
 ```
@@ -38,11 +36,11 @@ example)
 
 6. 극작가 목록 get_playwright_list(start_date="20210101", end_date=20220101")
 
-7. 예매 상황판 get_reservation_status_list(date_type="day", date="20220101", mode= "nationwide")
+7. 예매 상황판 get_reservation_status_list(date_type="day", date="20220101", mode="nationwide")
 
-8. 일별 티켓판매수 및 티켓판매액 get_daily_ticket_sales(start_date="202201")
+8. 일별 티켓판매수 및 티켓판매액 get_daily_ticket_sales(start_month="202201")
 
-9. 월별 티켓판매수 및 티켓판매액 get_monthly_ticket_sales(start_date="2022")
+9. 월별 티켓판매수 및 티켓판매액 get_monthly_ticket_sales(start_year="2022")
 
 10. 국내/내한별 통계 get_statistics_by_domestic_abroad(start_date="20210101", end_date=20220101")
 
@@ -54,5 +52,14 @@ example)
 
 14. 공연별 통계 get_statistics_by_performance(start_date="20210101", end_date=20220101")
 ```
+
+API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 값을 입력하시면 됩니다.
+API에 입력되는 인자값은 모두 <span style="color:red">string type</span> 입니다.
+
+* start_date = "년/월/일"
+* end_date = "년/월/일"
+
+
+
 
 
