@@ -38,9 +38,21 @@ example)
 
 6. 극작가 목록 get_playwright_list(start_date="20210101", end_date=20220101")
 
-:bulb: start_date, end_date 는 인자값으로 string type의 
+7. 예매 상황판 get_reservation_status_list(date_type="day", date="20220101", mode= "nationwide")
 
-7. 예매 상황판 get_reservation_status_list(date_type =(), date, mode= "nationwide")
+8. 일별 티켓판매수 및 티켓판매액 get_daily_ticket_sales(start_date="202201")
+
+9. 월별 티켓판매수 및 티켓판매액 get_monthly_ticket_sales(start_date="2022")
+
+10. 국내/내한별 통계 get_statistics_by_domestic_abroad(start_date="20210101", end_date=20220101")
+
+11. 공연 시설별 통계 get_statistics_by_facility(start_date="20210101", end_date=20220101")
+
+12. 지역별 통계 get_statistics_by_region(start_date="20210101", end_date=20220101")
+
+13. 장르별 통계 get_statistics_by_genre(start_date="20210101", end_date=20220101")
+
+14. 공연별 통계 get_statistics_by_performance(start_date="20210101", end_date=20220101")
 ```
 
 
