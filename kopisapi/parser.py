@@ -2,6 +2,8 @@ import json
 import logging
 import xmltodict
 
+logging.basicConfig(level=logging.WARNING)
+
 
 def parse(param_type, data_parse):
 

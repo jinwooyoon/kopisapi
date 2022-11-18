@@ -1,7 +1,4 @@
 from .kopis_api_requester import KopisApiRequester
-# from .get_request import get_requests
-# from parser import parse
-# from constants import AREA_CODE,GENRE_CODE
 
 class KopisAPI:
     def __init__(self, service_key):
@@ -42,13 +39,13 @@ class KopisAPI:
 
             return self._requester.request_c_type(param_type="boxoffice", date_type=date_type, date=date)
 
-    def get_daily_ticket_sales(self, start_date):
+    def get_daily_ticket_sales(self, start_month):
 
-        return self._requester.request_b_type(param_type="prfstsTotal", date_type="day", start_date=start_date)
+        return self._requester.request_b_type(param_type="prfstsTotal", date_type="day", start_date=start_month)
 
-    def get_monthly_ticket_sales(self, start_date):
+    def get_monthly_ticket_sales(self, start_year):
 
-        return self._requester.request_b_type(param_type="prfstsTotal", date_type="month", start_date=start_date)
+        return self._requester.request_b_type(param_type="prfstsTotal", date_type="month", start_date=start_year)
 
     def get_statistics_by_domestic_abroad(self, start_date, end_date):
 
