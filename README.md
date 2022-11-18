@@ -10,9 +10,9 @@ KOPIS(공연 예술 통합 전산망)의 데이터를
 ## How to use
 
 ```python
-import kopisapi
+from kopisapi import KopisAPI
 
-kopis = kopisapi("INPUT YOUR KOPIS SERVICE KEY")
+kopis = KopisAPI("INPUT YOUR KOPIS SERVICE KEY")
 
 kopis.get_performance_list(start_date="20220101",end_date="20220102")
 
