@@ -27,17 +27,17 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
 ### :information_desk_person: 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.
 
 ```
-1. 공연 목록 get_performance_list(start_date="20210101", end_date=20220101")
+1. 공연 목록 get_performance_list(start_date="20210101", end_date="20220101")
   
 2. 공연시설 목록 get_performance_facility_list()
   
 3. 기획/제작사 목록 get_production_company_list()
 
-4. 축제 목록 get_festival_list(start_date="20210101", end_date=20220101")
+4. 축제 목록 get_festival_list(start_date="20210101", end_date="20220101")
 
-5. 수상작 목록 get_award_list(start_date="20210101", end_date=20220101")
+5. 수상작 목록 get_award_list(start_date="20210101", end_date="20220101")
 
-6. 극작가 목록 get_playwright_list(start_date="20210101", end_date=20220101")
+6. 극작가 목록 get_playwright_list(start_date="20210101", end_date="20220101")
 
 7. 예매 상황판 get_reservation_status_list(date_type="day", date="20220101", mode="nationwide")
 
@@ -45,15 +45,15 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
 
 9. 월별 티켓판매수 및 티켓판매액 get_monthly_ticket_sales(start_year="2022")
 
-10. 국내/내한별 통계 get_statistics_by_domestic_abroad(start_date="20210101", end_date=20220101")
+10. 국내/내한별 통계 get_statistics_by_domestic_abroad(start_date="20210101", end_date="20220101")
 
-11. 공연 시설별 통계 get_statistics_by_facility(start_date="20210101", end_date=20220101")
+11. 공연 시설별 통계 get_statistics_by_facility(start_date="20210101", end_date="20220101")
 
-12. 지역별 통계 get_statistics_by_region(start_date="20210101", end_date=20220101")
+12. 지역별 통계 get_statistics_by_region(start_date="20210101", end_date="20220101")
 
-13. 장르별 통계 get_statistics_by_genre(start_date="20210101", end_date=20220101")
+13. 장르별 통계 get_statistics_by_genre(start_date="20210101", end_date="20220101")
 
-14. 공연별 통계 get_statistics_by_performance(start_date="20210101", end_date=20220101")
+14. 공연별 통계 get_statistics_by_performance(start_date="20210101", end_date="20220101")
 ```
 
 :bulb:  API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 값을 입력하시면 됩니다.  
