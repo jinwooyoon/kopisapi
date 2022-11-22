@@ -23,7 +23,7 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
   
   
   
-
+------
 ### :information_desk_person: 총 14개의 API 항목을 지원하며 목록은 다음과 같습니다.
 
 ```
@@ -61,10 +61,8 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
  API에 입력되는 인자값은 모두 `string type`입니다.
   
 ------
-**start_date**  
-= "년/월/일"  
-**end_date**  
-= "년/월/일"  
+**start_date="년/월/일"**  
+**end_date="년/월/일"**  
 * start_month = "년/월"
 * start_year = "년"
 * date_type = ["month","week","day"]
