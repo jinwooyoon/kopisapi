@@ -11,7 +11,7 @@ class KopisApiRequester:
         self._url = "http://www.kopis.or.kr/openApi/restful/"
         self.data_result = []
 
-    def request_a_type(self, param_type, region=None, genre=None, start_date=None, end_date=None):
+    def request_a_type(self, param_type, region=None, genre=None, start_date=None, end_date=None, area=None):
 
         if genre is not None:
             for key, value in GENRE_CODE.items():
@@ -28,7 +28,7 @@ class KopisApiRequester:
         page_count = 1
 
         params = {"cpage": str(page_count), "rows": "500",
-                  "stdate": start_date, "eddate": end_date, "signgucode": region, "shcate": genre}
+                  "stdate": start_date, "eddate": end_date, "signgucode": region, "shcate": genre, "sharea": area}
 
         while True:
 
