@@ -12,7 +12,7 @@ install_requires = [
 
 setup(
     name="kopisapi",
-    version="0.0.1",
+    version="0.0.2",
     license="",
     author="jinwooyoon",
     author_email="say_stop@naver.com",

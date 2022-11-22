@@ -9,9 +9,10 @@ class KopisApiRequester:
     def __init__(self, service_key):
         self._service_key = service_key
         self._url = "http://www.kopis.or.kr/openApi/restful/"
-        self.data_result = []
 
     def request_a_type(self, param_type, region=None, genre=None, start_date=None, end_date=None, area=None):
+
+        data_result = []
 
         if genre is not None:
             for key, value in GENRE_CODE.items():
@@ -38,18 +39,20 @@ class KopisApiRequester:
 
             for i in data_list:
 
-                self.data_result.append(i[0])
+                data_result.append(i[0])
 
                 break_parse = i[1]
 
             if break_parse < 500:
 
-                return self.data_result
+                return data_result
 
             page_count += 1
             params.update({"cpage": str(page_count)})
 
     def request_b_type(self, param_type, date_type=None, start_date=None, end_date=None, date=None):
+
+        data_result = []
 
         url = self._url + param_type + '?service=' + self._service_key
 
@@ -62,11 +65,13 @@ class KopisApiRequester:
 
         for i in data_list:
 
-            self.data_result.append(json.dumps(i[0], ensure_ascii=False))
+            data_result.append(json.dumps(i[0], ensure_ascii=False))
 
-        return self.data_result
+        return data_result
 
     def request_c_type(self, param_type, date_type=None, date=None):
+
+        data_result = []
 
         url = self._url + param_type + '?service=' + self._service_key
 
@@ -81,7 +86,7 @@ class KopisApiRequester:
                 data_list = parse(param_type, data)
 
                 for i in data_list:
-                    self.data_result.append(json.dumps(
+                    data_result.append(json.dumps(
                         i[0], ensure_ascii=False))
 
-            return self.data_result
+            return data_result
