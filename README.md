@@ -67,5 +67,5 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
 **start_year="년"**  
 **date_type=["month","week","day"]**  
 **mode=["nationwide","region"] [nationwide는 전국 공연 예매 랭킹 순위 / region은 지역별 공연 예매 랭킹 순위]**  
-**region=["seoul","busan","daegu","inchon","gwangju","daejeon","ulsan","sejong","gyeonggi",  "gangwon","chungbuk","chungnam","jeonbuk","jeonnam","gyeongbuk","gyeongnam","jeju"]**
+*region=["seoul","busan","daegu","inchon","gwangju","daejeon","ulsan","sejong","gyeonggi",  "gangwon","chungbuk","chungnam","jeonbuk","jeonnam","gyeongbuk","gyeongnam","jeju"]*
 ------
