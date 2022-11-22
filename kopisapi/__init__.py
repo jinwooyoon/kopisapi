@@ -1,13 +1,14 @@
 from .kopis_api_requester import KopisApiRequester
 
+
 class KopisAPI:
     def __init__(self, service_key):
 
         self._requester = KopisApiRequester(service_key)
 
-    def get_performance_list(self, start_date, end_date):
+    def get_performance_list(self, start_date, end_date, region=None, genre=None):
 
-        return self._requester.request_a_type(param_type="pblprfr", start_date=start_date, end_date=end_date)
+        return self._requester.request_a_type(param_type="pblprfr", start_date=start_date, end_date=end_date, region=region, genre=genre)
 
     def get_performance_facility_list(self):
 
@@ -17,13 +18,13 @@ class KopisAPI:
 
         return self._requester.request_a_type(param_type="mnfct")
 
-    def get_festival_list(self, start_date, end_date):
+    def get_festival_list(self, start_date, end_date, region=None, genre=None):
 
-        return self._requester.request_a_type(param_type="prffest", start_date=start_date, end_date=end_date)
+        return self._requester.request_a_type(param_type="prffest", start_date=start_date, end_date=end_date, region=region, genre=genre)
 
-    def get_award_list(self, start_date, end_date):
+    def get_award_list(self, start_date, end_date,  region=None, genre=None):
 
-        return self._requester.request_a_type(param_type="prfawad", start_date=start_date, end_date=end_date)
+        return self._requester.request_a_type(param_type="prfawad", start_date=start_date, end_date=end_date, region=region, genre=genre)
 
     def get_playwright_list(self, start_date, end_date):
 

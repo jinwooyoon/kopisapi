@@ -9,8 +9,8 @@ def parse(param_type, data_parse):
 
     response = data_parse.encode('utf-8')
     data_parse = xmltodict.parse(response)
-
     if param_type == "pblprfr" or param_type == "prffest" or param_type == "prfawad" or param_type == "prfper" or param_type == "prfplc" or param_type == "mnfct":
+
         xml_keys = "dbs"
         xml_key = "db"
 
@@ -22,10 +22,18 @@ def parse(param_type, data_parse):
         xml_keys = "prfsts"
         xml_key = "prfst"
 
-    if data_parse[xml_keys][xml_key] is None:
+    check_data_list = data_parse[xml_keys][xml_key]
 
-        logging.warning("The data is empty. Please check the parameter again.")
+    if type(check_data_list) == type({}):
+        check_data_list = []
+        check_data_list.append(data_parse[xml_keys][xml_key])
+
+    try:
+        for data in check_data_list:
+
+            yield data, len(data_parse[xml_keys][xml_key])
+
+    except TypeError:
+
+        logging.warning("API has no data or is a parameter problem.")
         raise
-
-    for data in data_parse[xml_keys][xml_key]:
-        yield data, len(data_parse[xml_keys][xml_key])

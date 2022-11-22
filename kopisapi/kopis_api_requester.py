@@ -11,14 +11,24 @@ class KopisApiRequester:
         self._url = "http://www.kopis.or.kr/openApi/restful/"
         self.data_result = []
 
-    def request_a_type(self, param_type, start_date=None, end_date=None):
+    def request_a_type(self, param_type, region=None, genre=None, start_date=None, end_date=None):
+
+        if genre is not None:
+            for key, value in GENRE_CODE.items():
+                if value == genre:
+                    genre = key
+
+        if region is not None:
+            for key, value in AREA_CODE.items():
+                if value == region:
+                    region = key
 
         url = self._url + param_type + '?service=' + self._service_key
 
         page_count = 1
 
         params = {"cpage": str(page_count), "rows": "500",
-                  "stdate": start_date, "eddate": end_date}
+                  "stdate": start_date, "eddate": end_date, "signgucode": region, "shcate": genre}
 
         while True:
 
@@ -26,11 +36,9 @@ class KopisApiRequester:
 
             data_list = parse(param_type, data)
 
-            break_parse = None
-
             for i in data_list:
 
-                self.data_result.append(json.dumps(i[0], ensure_ascii=False))
+                self.data_result.append(i[0])
 
                 break_parse = i[1]
 
