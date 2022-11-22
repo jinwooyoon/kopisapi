@@ -70,3 +70,5 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
 * region=["seoul","busan","daegu","inchon","gwangju","daejeon","ulsan","sejong","gyeonggi",  "gangwon","chungbuk","chungnam","jeonbuk","jeonnam","gyeongbuk","gyeongnam","jeju"]
 * genre=["act","musical"]
 ------
+출처: (재)예술경영지원센터 공연예술통합전산망(www.kopis.or.kr)
+------
