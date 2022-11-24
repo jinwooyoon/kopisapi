@@ -65,7 +65,7 @@ class KopisApiRequester:
 
         for i in data_list:
 
-            data_result.append(json.dumps(i[0], ensure_ascii=False))
+            data_result.append(i[0])
 
         return data_result
 
@@ -86,7 +86,6 @@ class KopisApiRequester:
                 data_list = parse(param_type, data)
 
                 for i in data_list:
-                    data_result.append(json.dumps(
-                        i[0], ensure_ascii=False))
+                    data_result.append(i[0])
 
             return data_result

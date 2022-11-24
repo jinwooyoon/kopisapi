@@ -12,10 +12,11 @@ install_requires = [
 
 setup(
     name="kopisapi",
-    version="0.0.2",
+    version="0.0.3",
     license="",
     author="jinwooyoon",
     author_email="say_stop@naver.com",
+    url="https://github.com/jinwooyoon/kopisapi",
     description="This program provides data related to Korean performances.",
     install_requires=install_requires,
     python_requires = ">=3",
