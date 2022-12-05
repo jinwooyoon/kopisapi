@@ -11,7 +11,7 @@ GENRE_CODE = {
 
 AREA_CODE = {
     "11": "seoul",
-    "26": "busan",
+    "26": "busan",  
     "27": "daegu",
     "28": "inchon",
     "29": "gwangju",

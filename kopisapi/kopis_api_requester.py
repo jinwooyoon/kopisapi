@@ -69,23 +69,32 @@ class KopisApiRequester:
 
         return data_result
 
-    def request_c_type(self, param_type, date_type=None, date=None):
+    def request_c_type(self, param_type, genre=None, area=None, date_type=None, date=None):
 
         data_result = []
 
         url = self._url + param_type + '?service=' + self._service_key
+        
+        
+        if genre is not None:
+            for key, value in GENRE_CODE.items():
+                if value == genre:
+                    genre = key
 
-        for genre in GENRE_CODE:
+        if area is not None:
+            for key, value in AREA_CODE.items():
+                if value == area:
+                    area = key
 
-            for area in AREA_CODE:
-                params = {"ststype": date_type, "date": date,
-                          "catecode": {genre}, "area": {area}}
 
-                data = get_requests(url, params)
+        params = {"ststype": date_type, "date": date,
+                    "catecode": genre, "area": area}
 
-                data_list = parse(param_type, data)
+        data = get_requests(url, params)
 
-                for i in data_list:
-                    data_result.append(i[0])
+        data_list = parse(param_type, data)
 
-            return data_result
+        for i in data_list:
+            data_result.append(i[0])
+
+        return data_result
