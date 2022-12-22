@@ -32,11 +32,15 @@ class KopisAPI:
 
     def get_reservation_status_list(self, date_type, start_date, genre=None, region=None):
 
-            return self._requester.request_c_type(param_type="boxoffice", date_type=date_type, date=start_date, genre=genre, area=region)
+        return self._requester.request_c_type(param_type="boxoffice", date_type=date_type, date=start_date, genre=genre, area=region)
 
     def get_daily_ticket_sales(self, start_month):
 
         return self._requester.request_b_type(param_type="prfstsTotal", date_type="day", start_date=start_month)
+
+    def get_day_ticket_sales(self, start_date, end_date):
+
+        return self._requester.request_b_type(param_type="prfstsTotal", date_type="dayWeek", start_date=start_date, end_date=end_date)
 
     def get_monthly_ticket_sales(self, start_year):
 
@@ -59,5 +63,5 @@ class KopisAPI:
         return self._requester.request_b_type(param_type="prfstsCate", start_date=start_date, end_date=end_date)
 
     def get_statistics_by_performance(self, start_date, end_date, genre=None):
-        
+
         return self._requester.request_a_type(param_type="prfstsPrfBy", start_date=start_date, end_date=end_date, genre=genre)

@@ -24,7 +24,7 @@ def get_requests(url, params):
 
         session.mount("https://", adapter)
 
-        data = session.get(url, params=params)
+        data = session.get(url, params=params,verify=False)
         
         data.raise_for_status()
         

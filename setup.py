@@ -12,8 +12,8 @@ install_requires = [
 
 setup(
     name="kopisapi",
-    version="0.0.3",
-    license="",
+    version="0.1.0",
+    license="MIT license",
     author="jinwooyoon",
     author_email="say_stop@naver.com",
     url="https://github.com/jinwooyoon/kopisapi",
