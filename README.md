@@ -45,15 +45,17 @@ https://www.kopis.or.kr/por/cs/openapi/openApiInfo.do?menuId=MNU_00074&searchTyp
 
 9. 월별 티켓판매수 및 티켓판매액 get_monthly_ticket_sales(start_year="2022")
 
-10. 국내/내한별 통계 get_statistics_by_domestic_abroad(start_date="20210101", end_date="20220101")
+10. 요일별 티켓판매수 및 티켓판매액 get_day_ticket_sales(start_date="20221217",end_date="20221224")
 
-11. 공연 시설별 통계 get_statistics_by_facility(start_date="20210101", end_date="20220101", region="seoul")
+11. 국내/내한별 통계 get_statistics_by_domestic_abroad(start_date="20210101", end_date="20220101")
 
-12. 지역별 통계 get_statistics_by_region(start_date="20210101", end_date="20220101")
+12. 공연 시설별 통계 get_statistics_by_facility(start_date="20210101", end_date="20220101", region="seoul")
 
-13. 장르별 통계 get_statistics_by_genre(start_date="20210101", end_date="20220101")
+13. 지역별 통계 get_statistics_by_region(start_date="20210101", end_date="20220101")
 
-14. 공연별 통계 get_statistics_by_performance(start_date="20210101", end_date="20220101", genre="musical")
+14. 장르별 통계 get_statistics_by_genre(start_date="20210101", end_date="20220101")
+
+15. 공연별 통계 get_statistics_by_performance(start_date="20210101", end_date="20220101", genre="musical")
 ```
 ------
 :bulb:  API 마다 인자값이 상이하므로 밑에 예시를 통하여 적절히 값을 입력하시면 됩니다.  
