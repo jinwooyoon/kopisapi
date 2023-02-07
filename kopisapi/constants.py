@@ -1,11 +1,13 @@
 GENRE_CODE = {
     "AAAA": "act",
-    "AAAB": "musical",
-    "BBBA": "dance",
+    "BBBC": "various_dance",
+    "BBBE": "popular_dance",
     "CCCA": "classic",
-    "CCCB": "opera",
     "CCCC": "korean_classical",
-    "EEEA": "complex"
+    "CCCD": "popular_music",
+    "EEEA": "complex",
+    "EEEB": "magic",
+    "GGGA": "musical"
 }
 
 
