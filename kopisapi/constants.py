@@ -10,6 +10,20 @@ GENRE_CODE = {
     "GGGA": "musical"
 }
 
+GENRE_CODE_RESERVATION = {
+    "AAAA": "act",
+    "GGGA": "musical",
+    "CCCA": "classic",
+    "CCCC": "korean_classical",
+    "CCCD": "popular_music",
+    "BBBC": "dance",
+    "BBBR": "popular_dance",
+    "EEEB": "magic",
+    "EEEA": "complex",
+    "KID": "children",
+    "OPEN": "openrun"
+}
+
 
 AREA_CODE = {
     "11": "seoul",

@@ -1,7 +1,7 @@
 from .get_request import get_requests
 from .parser import parse
 import json
-from .constants import AREA_CODE, GENRE_CODE
+from .constants import AREA_CODE, GENRE_CODE, GENRE_CODE_RESERVATION
 
 
 class KopisApiRequester:
@@ -77,7 +77,7 @@ class KopisApiRequester:
         
         
         if genre is not None:
-            for key, value in GENRE_CODE.items():
+            for key, value in GENRE_CODE_RESERVATION.items():
                 if value == genre:
                     genre = key
 
